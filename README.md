@@ -3,75 +3,210 @@
 <img width="983" height="555" alt="Screenshot 2026-06-12 203354 - Copy" src="https://github.com/user-attachments/assets/21c72ef3-01ae-4bc5-8906-3784c46612b3" />
 
 
+
+# 📊 Sales Performance Dashboard | Business Review (2015–2018)
+
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-Measures-blue)
+![Excel](https://img.shields.io/badge/Data-Analysis-green)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+
 ---
 
 # 📌 Project Overview
 
-This Power BI dashboard provides a comprehensive business performance review from **2015 to 2018**. The project focuses on analyzing sales, profit, orders, targets, return rates, delivery delays, regional performance, manager effectiveness, and category achievements.
+This Power BI dashboard provides a comprehensive analysis of business performance from **2015 to 2018**. The project focuses on sales growth, profitability, target achievement, regional performance, category analysis, return rates, and delivery delays.
 
-The dashboard is designed to help decision-makers monitor business health, identify operational risks, evaluate target achievement, and uncover opportunities for growth.
+The dashboard enables stakeholders to monitor key business metrics, evaluate regional manager performance, identify operational risks, and make data-driven decisions.
 
 ---
 
-# 🎯 Business Problem
+# 🎯 Business Objectives
 
-Management needed a centralized dashboard to answer the following questions:
+The dashboard was designed to answer the following business questions:
 
-- How is the company performing overall?
-- Which regions generate the highest sales?
-- Which Regional Managers perform best?
-- Are sales targets being achieved?
-- Which product categories contribute the most revenue?
+- How is the business performing overall?
+- Which regions contribute the highest sales and profit?
+- Which Regional Managers are driving performance?
+- Are category sales targets being achieved?
 - How have sales and profits changed over time?
-- What is the impact of returns and delayed deliveries?
-- Which business areas require immediate attention?
+- Which categories have the highest returns?
+- How do delivery delays impact operations?
+- What business risks require attention?
 
 ---
 
-# 📂 Dataset Information
+# 📂 Dataset Description
 
-The dashboard is built using business sales data containing:
+The dataset represents a retail company's sales operations from **2015 to 2018** and contains information related to orders, customers, product categories, sales targets, returns, and regional management.
 
-### Orders Data
+The data was used to analyze business performance, profitability, operational efficiency, and target achievement across different regions and categories.
+
+---
+
+## Dataset Tables
+
+### Orders Table
+
+The primary fact table containing transactional sales records.
+
+**Key Fields**
 - Order ID
 - Order Date
-- Sales
-- Profit
+- Customer ID
+- Customer Name
+- City
+- Country
 - Region
 - Category
-- Ship Mode
+- Sales
+- Profit
+- Discount
+- Delivery Days
+- Returned Status
+- Delayed Status
+
+**Purpose**
+
+Used to calculate:
+- Total Sales
+- Total Profit
+- Total Orders
+- Profit Margin
+- Delay Rate
+- Category Performance
+
+---
+
+### People Table
+
+Contains information about Regional Managers assigned to each region.
+
+**Key Fields**
+- Region
 - Regional Manager
 
-### Returns Data
-- Returned Orders
+**Purpose**
 
-### Target Data
-- Category Targets
-- Performance Benchmarks
+Used for:
+- Regional Performance Analysis
+- Manager Performance Tracking
+- Manager Ranking
+
+---
+
+### Target Table
+
+Contains category-wise sales targets.
+
+**Key Fields**
+- Year
+- Category
+- Sales Target
+
+**Purpose**
+
+Used to:
+- Compare Actual Sales vs Target
+- Calculate Achievement Percentage
+- Identify Target Gaps
+
+---
+
+### Returns_Bridge Table
+
+Bridge table connecting returned orders with the Orders table.
+
+**Purpose**
+
+Used to:
+- Maintain relationships
+- Improve return analysis
+
+---
+
+### Returns_Detail Table
+
+Contains returned order records.
+
+**Purpose**
+
+Used to:
+- Calculate Return Rate %
+- Analyze returned orders
+
+---
+
+# 📊 Dataset Summary
+
+| Attribute | Value |
+|------------|---------|
+| Time Period | 2015 – 2018 |
+| Industry | Retail |
+| Fact Table | Orders |
+| Dimension Tables | People, Target |
+| Supporting Tables | Returns_Bridge, Returns_Detail |
+| Regions | Central, North, South |
+| Categories | Furniture, Office Supplies, Technology |
+| Reporting Tool | Power BI |
+
+---
+
+# 🏗️ Data Model
+
+The dashboard follows a **Fact-Dimension Model** to ensure efficient reporting and filtering.
+
+### Fact Table
+- Orders
+
+### Dimension Tables
+- People
+- Target
+
+### Supporting Tables
+- Returns_Bridge
+- Returns_Detail
+
+---
+
+## Data Model Diagram
+
+![Data Model](screenshots/data_model.png)
+
+---
+
+## Relationships
+
+| From Table | To Table | Relationship |
+|------------|-----------|-------------|
+| Orders | People | Many-to-One |
+| Orders | Target | Many-to-One |
+| Orders | Returns_Bridge | One-to-Many |
+| Returns_Bridge | Returns_Detail | One-to-One |
 
 ---
 
 # 🛠️ Tools & Technologies
 
-| Tool | Purpose |
-|--------|----------|
-| Power BI Desktop | Dashboard Development |
-| Power Query | Data Cleaning & Transformation |
-| DAX | Calculated Measures |
-| Excel | Data Source |
-| Data Modeling | Relationships & Analytics |
+- Power BI Desktop
+- Power Query
+- DAX
+- Excel
+- Data Modeling
+- Data Visualization
 
 ---
 
-# 📈 Dashboard Structure
+# 📈 Dashboard Pages
 
-The report consists of **4 interactive pages**.
+The report consists of **4 interactive dashboard pages**.
 
 ---
 
-# Page 1: Executive Business Overview
+# 1️⃣ Executive Business Overview
 
-## Objective
+## Purpose
+
 Provide a high-level summary of business performance.
 
 ### KPIs
@@ -89,22 +224,30 @@ Provide a high-level summary of business performance.
 
 - Sales & Profit by Year
 - Sales by Region
-- Year-over-Year Comparison Table
-- Year Filter Slicer
+- Year-over-Year Comparison
+- KPI Cards
+- Year Slicer
 
 ### Key Insights
 
-- Sales increased consistently between 2015 and 2018.
-- 2018 recorded the highest revenue and profit.
-- Central region contributed the largest share of total sales.
-- Profit growth followed sales growth throughout the period.
+- Sales increased consistently from 2015 to 2018.
+- 2018 generated the highest revenue and profit.
+- Central region contributed the largest share of sales.
+- Business maintained a positive profit trend.
 
 ---
 
-# Page 2: Regional Manager Performance
+## Dashboard Preview
 
-## Objective
-Analyze Regional Manager contributions and performance.
+![Executive Overview](screenshots/executive_overview.png)
+
+---
+
+# 2️⃣ Regional Manager Performance
+
+## Purpose
+
+Evaluate sales and profit performance of Regional Managers.
 
 ### Managers Covered
 
@@ -115,38 +258,31 @@ Analyze Regional Manager contributions and performance.
 ### Visualizations
 
 - Manager KPI Cards
-- Manager Ranking Chart
-- Year-over-Year Sales Trend
+- Manager Ranking
+- Sales Trend by Manager
 - Manager × Category Achievement Matrix
 
 ### Key Insights
 
-#### Emily Burns
-- Highest Sales Contribution
-- Highest Profit Contribution
-
-#### Ross DeVincentis
-- Strong Profitability
-- Moderate Sales Performance
-
-#### Damala Kotsonis
-- Consistent Performance Across Categories
-
-### Business Value
-
-Helps leadership identify:
-- Top-performing managers
-- Growth opportunities
-- Performance gaps
+- Emily Burns achieved the highest sales and profit.
+- All managers demonstrated positive growth trends.
+- Technology category contributed significantly to achievement percentages.
 
 ---
 
-# Page 3: Category & Operational Performance
+## Dashboard Preview
 
-## Objective
-Evaluate category performance against targets and operational efficiency.
+![Manager Performance](screenshots/manager_performance.png)
 
-### Categories Analyzed
+---
+
+# 3️⃣ Category & Operational Performance
+
+## Purpose
+
+Analyze category performance and operational efficiency.
+
+### Categories
 
 - Technology
 - Office Supplies
@@ -154,44 +290,30 @@ Evaluate category performance against targets and operational efficiency.
 
 ### Visualizations
 
-#### Sales vs Target by Category
-Compare actual sales with category targets.
-
-#### Return Rate by Region & Category
-Identify categories with high return percentages.
-
-#### Return Rate Trend Analysis
-Track return rates across years.
-
-#### Delivery Delay Analysis
-Analyze delays by ship mode.
+- Actual Sales vs Target
+- Return Rate by Region & Category
+- Return Trend by Category
+- Delivery Delay by Ship Mode
 
 ### Key Insights
 
-### Technology
-- Highest Sales
-- Highest Target Achievement
-
-### Office Supplies
-- Strong and Stable Performance
-
-### Furniture
-- Lowest Achievement Percentage
-
-### Shipping Analysis
-
-#### Standard Class
-- Highest delay percentage
-
-#### Second Class
-- Lower delay percentage
+- Technology generated the highest revenue.
+- Furniture showed the lowest achievement percentage.
+- Standard Class shipments experienced higher delays.
 
 ---
 
-# Page 4: Risk Assessment & Recommendations
+## Dashboard Preview
 
-## Objective
-Identify operational risks and provide actionable recommendations.
+![Category Performance](screenshots/category_performance.png)
+
+---
+
+# 4️⃣ Risk Assessment & Recommendations
+
+## Purpose
+
+Identify operational risks and areas requiring business intervention.
 
 ### Visualizations
 
@@ -199,66 +321,38 @@ Identify operational risks and provide actionable recommendations.
 - Managers Below Target Table
 - Categories Missing Target Table
 - Risk Summary Matrix
-- Regional Manager & Category Mapping
+- Manager & Category Mapping
 
----
+### Risk Indicators
 
-# Risk Assessment Framework
-
-| KPI | Risk Level |
-|-------|-------------|
-| Return Rate | Medium |
+| KPI | Status |
+|-------|---------|
+| Return Rate | Moderate |
 | Delay Rate | High |
-| Target Achievement | Low Risk |
-| Profitability | Low Risk |
+| Profitability | Good |
+| Target Achievement | Good |
+
+### Major Risk
+
+🚨 High Delivery Delay Rate (**40.76%**)
+
+### Recommended Actions
+
+- Improve logistics planning
+- Optimize warehouse operations
+- Monitor shipping performance
+- Analyze root causes of returns
+- Review category target allocation
 
 ---
 
-# Major Risk Identified
+## Dashboard Preview
 
-## High Delivery Delays
-
-Average Delay Rate:
-
-**40.76%**
-
-### Potential Impact
-
-- Customer dissatisfaction
-- Increased returns
-- Reduced customer retention
-- Lower operational efficiency
+![Risk Assessment](screenshots/risk_assessment.png)
 
 ---
 
-# Recommended Actions
-
-### Logistics Optimization
-
-- Improve warehouse processes
-- Optimize inventory placement
-- Reduce shipping bottlenecks
-
-### Delivery Performance Monitoring
-
-- Track carrier performance
-- Establish delivery SLAs
-- Monitor delays monthly
-
-### Return Reduction Strategy
-
-- Analyze return reasons
-- Improve product quality
-- Improve packaging standards
-
-### Target Management
-
-- Introduce manager-specific targets
-- Review category targets quarterly
-
----
-
-# 📊 DAX Measures Used
+# 📐 DAX Measures Used
 
 ## Total Sales
 
@@ -285,124 +379,124 @@ DISTINCTCOUNT(Orders[Order ID])
 
 ```DAX
 Profit Margin % =
-DIVIDE([Total Profit],[Total Sales],0)*100
+DIVIDE([Total Profit],[Total Sales],0) * 100
 ```
 
 ## Return Rate %
 
 ```DAX
 Return Rate % =
-DIVIDE([Returned Orders],[Total Orders],0)*100
+DIVIDE([Returned Orders],[Total Orders],0) * 100
 ```
 
 ## Delay Rate %
 
 ```DAX
 Delay Rate % =
-DIVIDE([Delayed Orders],[Total Orders],0)*100
+DIVIDE([Delayed Orders],[Total Orders],0) * 100
 ```
 
 ## Achievement %
 
 ```DAX
 Achievement % =
-DIVIDE([Total Sales],[Target Sales],0)*100
+DIVIDE([Total Sales],[Target Sales],0) * 100
 ```
 
 ---
 
 # 📌 Key Business Findings
 
-## Revenue Growth
+## Sales Performance
 
 - Total Sales exceeded **2.9 Million**
-- Continuous growth observed every year
+- Strong year-over-year growth
+- 2018 was the best-performing year
 
 ## Profitability
 
-- Total Profit exceeded **372K**
+- Total Profit reached **372.83K**
 - Profit Margin maintained at **12.69%**
 
 ## Regional Performance
 
 ### Central Region
-- Highest revenue contributor
+Highest revenue contributor
 
 ### North Region
-- Moderate contribution
+Moderate contribution
 
 ### South Region
-- Growth opportunity identified
+Growth opportunity identified
 
 ## Category Performance
 
 ### Technology
-- Best-performing category
+Highest sales and achievement
+
+### Office Supplies
+Stable performance
 
 ### Furniture
-- Lowest target achievement
+Lowest achievement percentage
 
-## Operations
+## Operational Performance
 
 ### Return Rate
-- 6.37%
+6.37%
 
 ### Delay Rate
-- 40.76%
+40.76%
 
-Delivery delays represent the most significant operational challenge.
+Delivery delays remain the primary operational challenge.
+
+---
+
+# 💡 Business Recommendations
+
+### Logistics Improvement
+
+- Improve warehouse efficiency
+- Optimize shipping routes
+- Monitor carrier performance
+
+### Return Reduction
+
+- Analyze return reasons
+- Improve product quality checks
+- Enhance packaging standards
+
+### Performance Monitoring
+
+- Introduce monthly KPI reviews
+- Set manager-level targets
+- Monitor category achievement regularly
 
 ---
 
 # 🚀 Skills Demonstrated
 
 ### Power BI
-
 - Interactive Dashboard Design
 - Drill-down Analysis
 - KPI Development
 - Data Storytelling
 
 ### DAX
-
 - Calculated Measures
-- KPI Calculations
-- Percentage Metrics
-- Target Achievement Analysis
+- Performance Metrics
+- Target Achievement Calculations
 
 ### Data Analysis
-
-- Sales Analysis
+- Sales Analytics
 - Profitability Analysis
+- Operational Analysis
 - Risk Assessment
-- Performance Tracking
 
 ### Business Intelligence
-
 - Executive Reporting
-- Performance Monitoring
-- Operational Insights
 - Strategic Recommendations
-
----
-
-# 📷 Dashboard Screenshots
-
-## Executive Overview
-
-![Executive Overview](screenshots/executive_overview.png)
-
-## Regional Manager Performance
-
-![Manager Performance](screenshots/manager_performance.png)
-
-## Category Performance
-
-![Category Performance](screenshots/category_performance.png)
-
-## Risk Assessment
-
-![Risk Assessment](screenshots/risk_assessment.png)
+- Performance Monitoring
 
 ---
 
@@ -411,42 +505,40 @@ Delivery delays represent the most significant operational challenge.
 ```text
 Sales-Performance-Dashboard/
 │
-├── Sales_Performance_Dashboard.pbix
+├── sale_performance.pbix
 │
 ├── screenshots/
 │   ├── executive_overview.png
 │   ├── manager_performance.png
 │   ├── category_performance.png
-│   └── risk_assessment.png
+│   ├── risk_assessment.png
+│   └── data_model.png
 │
-├── dataset/
-│   ├── Orders.xlsx
-│   ├── Returns.xlsx
-│   └── Targets.xlsx
+├── README.md
 │
-└── README.md
+└── dataset/
 ```
 
 ---
 
 # 🎓 Learning Outcomes
 
-Through this project, I strengthened my skills in:
+This project helped strengthen skills in:
 
 - Power BI Dashboard Development
 - Data Modeling
 - DAX Calculations
-- Business KPI Design
-- Sales Analytics
-- Performance Monitoring
-- Risk Assessment
+- KPI Design
+- Business Analytics
+- Sales Performance Analysis
+- Operational Risk Assessment
 - Data Visualization Best Practices
 
 ---
 
 # 👨‍💻 Author
 
-## Ayan
+**Ayan**
 
 Aspiring Data Analyst
 
@@ -455,9 +547,14 @@ Aspiring Data Analyst
 - SQL
 - Python
 - Excel
-- Data Visualization
+- Data Analytics
 - Business Intelligence
+
+### Connect With Me
+
+- LinkedIn: *Add your LinkedIn Profile*
+- GitHub: *Add your GitHub Profile*
 
 ---
 
-# ⭐ If you found this project useful, please give it a star!
+## ⭐ If you found this project useful, please consider giving it a star!
