@@ -170,8 +170,10 @@ The dashboard follows a **Fact-Dimension Model** to ensure efficient reporting a
 ---
 
 ## Data Model Diagram
+<img width="682" height="487" alt="image" src="https://github.com/user-attachments/assets/63eb6205-0d55-4470-9c68-2814dae53a28" />
 
-![Data Model](screenshots/data_model.png)
+
+
 
 ---
 
