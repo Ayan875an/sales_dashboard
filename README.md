@@ -19,6 +19,7 @@ The goal of this project is to:
 ## 📊 Dashboard Pages
 
 ### 1. Executive Business Overview
+<img width="983" height="555" alt="image" src="https://github.com/user-attachments/assets/8692184d-9601-46b9-9497-7113895a1b91" />
 
 Provides a high-level summary of business performance including:
 
