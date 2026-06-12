@@ -25,12 +25,12 @@ The goal of this project is to:
 Provides a high-level summary of business performance including:
 
 ## Key KPIs
-Total Sales: 2.94M
-Total Orders: 5K
-Total Profit: 372.83K
-Return Rate: 6.37%
-Delay Rate: 40.76%
-Profit Margin: 12.69%
+*Total Sales: 2.94M
+*Total Orders: 5K
+*Total Profit: 372.83K
+*Return Rate: 6.37%
+*Delay Rate: 40.76%
+*Profit Margin: 12.69%
 
 ## Visualizations
 Sales & Profit by Year
