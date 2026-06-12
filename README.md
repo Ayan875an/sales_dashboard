@@ -30,6 +30,7 @@ Provides a high-level summary of business performance including:
 * Performance Trends
 
 ### 2. Regional Manager Performance
+<img width="986" height="551" alt="image" src="https://github.com/user-attachments/assets/59aa3764-36e3-4d62-b7ea-f134aa8cf026" />
 
 Analyzes manager-wise performance by:
 
@@ -40,6 +41,7 @@ Analyzes manager-wise performance by:
 * Performance Rankings
 
 ### 3. Category & Operational Performance
+<img width="977" height="550" alt="image" src="https://github.com/user-attachments/assets/2df9725d-d013-497e-9ec6-86413d581504" />
 
 Focuses on operational metrics such as:
 
@@ -50,6 +52,7 @@ Focuses on operational metrics such as:
 * Operational Efficiency Monitoring
 
 ### 4. Risk Assessment & Recommended Actions
+<img width="967" height="541" alt="image" src="https://github.com/user-attachments/assets/f3f99e76-9c61-48bb-baf3-6131aa3fdeb9" />
 
 Identifies business challenges and highlights:
 
