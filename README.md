@@ -21,6 +21,7 @@ The goal of this project is to:
 ### 1. Executive Business Overview
 <img width="983" height="555" alt="image" src="https://github.com/user-attachments/assets/8692184d-9601-46b9-9497-7113895a1b91" />
 
+
 Provides a high-level summary of business performance including:
 
 * Total Sales
@@ -31,6 +32,7 @@ Provides a high-level summary of business performance including:
 
 ### 2. Regional Manager Performance
 <img width="986" height="551" alt="image" src="https://github.com/user-attachments/assets/59aa3764-36e3-4d62-b7ea-f134aa8cf026" />
+
 
 
 Analyzes manager-wise performance by:
@@ -45,6 +47,7 @@ Analyzes manager-wise performance by:
 <img width="977" height="550" alt="image" src="https://github.com/user-attachments/assets/2df9725d-d013-497e-9ec6-86413d581504" />
 
 
+
 Focuses on operational metrics such as:
 
 * Product Category Sales
@@ -55,6 +58,7 @@ Focuses on operational metrics such as:
 
 ### 4. Risk Assessment & Recommended Actions
 <img width="967" height="541" alt="image" src="https://github.com/user-attachments/assets/f3f99e76-9c61-48bb-baf3-6131aa3fdeb9" />
+
 
 
 Identifies business challenges and highlights:
