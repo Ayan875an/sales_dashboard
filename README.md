@@ -131,6 +131,7 @@ This dashboard enables stakeholders to:
 ## 👨‍💻 Author
 
 **Ayan Samanta**
+
 Data Analytics | Power BI |
 
 ## 📬 Contact
