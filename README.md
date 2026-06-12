@@ -135,6 +135,9 @@ Data Analytics | Power BI |
 
 ## 📬 Contact
 📧 Email: ayansamanta875@gmail.com
+
 💼 LinkedIn: https://www.linkedin.com/in/ayan-samanta-710813246
+
 🧑‍💻 GitHub: https://github.com/Ayan875an
+
 ⭐ If you found this portfolio helpful or interesting, feel free to star the repository!
