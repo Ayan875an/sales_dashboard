@@ -1,5 +1,5 @@
 
-# 📊 Sales Performance Dashboard | Business Review (2015–2018)
+# 📊 Sales Performance Dashboard | Business Review 
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-Measures-blue)
@@ -10,7 +10,7 @@
 
 # 📌 Project Overview
 
-This Power BI dashboard provides a comprehensive analysis of business performance from **2015 to 2018**. The project focuses on sales growth, profitability, target achievement, regional performance, category analysis, return rates, and delivery delays.
+This Power BI dashboard provides a comprehensive analysis of business performance from **2015 to 2018** according to dataset. The project focuses on sales growth, profitability, target achievement, regional performance, category analysis, return rates, and delivery delays.
 
 The dashboard enables stakeholders to monitor key business metrics, evaluate regional manager performance, identify operational risks, and make data-driven decisions.
 
