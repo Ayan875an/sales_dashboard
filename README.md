@@ -1,8 +1,3 @@
-# 📊 Sales Performance Dashboard | Business Review (2015–2018)
-
-<img width="983" height="555" alt="Screenshot 2026-06-12 203354 - Copy" src="https://github.com/user-attachments/assets/21c72ef3-01ae-4bc5-8906-3784c46612b3" />
-
-
 
 # 📊 Sales Performance Dashboard | Business Review (2015–2018)
 
@@ -241,7 +236,8 @@ Provide a high-level summary of business performance.
 
 ## Dashboard Preview
 
-![Executive Overview](screenshots/executive_overview.png)
+<img width="970" height="545" alt="Screenshot 2026-06-12 203354 - Copy" src="https://github.com/user-attachments/assets/d23b3ba9-0cd1-4078-ae64-99f5198f8133" />
+
 
 ---
 
@@ -273,8 +269,8 @@ Evaluate sales and profit performance of Regional Managers.
 ---
 
 ## Dashboard Preview
+<img width="974" height="544" alt="Screenshot 2026-06-12 203454" src="https://github.com/user-attachments/assets/c952e1aa-674b-4c73-a6ab-9321c18da5b0" />
 
-![Manager Performance](screenshots/manager_performance.png)
 
 ---
 
@@ -307,7 +303,8 @@ Analyze category performance and operational efficiency.
 
 ## Dashboard Preview
 
-![Category Performance](screenshots/category_performance.png)
+<img width="977" height="550" alt="Screenshot 2026-06-12 203531" src="https://github.com/user-attachments/assets/658d0caf-1179-469d-b3ff-499b73dda3d7" />
+
 
 ---
 
@@ -349,8 +346,8 @@ Identify operational risks and areas requiring business intervention.
 ---
 
 ## Dashboard Preview
+<img width="967" height="541" alt="Screenshot 2026-06-12 203603" src="https://github.com/user-attachments/assets/feefbe33-4de2-4a21-bb11-d3994750d4aa" />
 
-![Risk Assessment](screenshots/risk_assessment.png)
 
 ---
 
@@ -508,13 +505,6 @@ Delivery delays remain the primary operational challenge.
 Sales-Performance-Dashboard/
 │
 ├── sale_performance.pbix
-│
-├── screenshots/
-│   ├── Executive Business Overview.png
-│   ├── Regional Manager Performance.png
-│   ├── Category & Operational Performance.png
-│   ├── Risk Assessment & Recommended Actions.png
-│   
 │
 ├── README.md
 │
