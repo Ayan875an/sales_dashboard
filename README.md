@@ -508,15 +508,15 @@ Sales-Performance-Dashboard/
 ├── sale_performance.pbix
 │
 ├── screenshots/
-│   ├── executive_overview.png
-│   ├── manager_performance.png
-│   ├── category_performance.png
-│   ├── risk_assessment.png
-│   └── data_model.png
+│   ├── Executive Business Overview.png
+│   ├── Regional Manager Performance.png
+│   ├── Category & Operational Performance.png
+│   ├── Risk Assessment & Recommended Actions.png
+│   
 │
 ├── README.md
 │
-└── dataset/
+└── SalesAnalytics_dataset.xlsx
 ```
 
 ---
@@ -538,7 +538,7 @@ This project helped strengthen skills in:
 
 # 👨‍💻 Author
 
-**Ayan**
+**Ayan Samanta**
 
 Aspiring Data Analyst
 
@@ -550,10 +550,14 @@ Aspiring Data Analyst
 - Data Analytics
 - Business Intelligence
 
-### Connect With Me
 
-- LinkedIn: *Add your LinkedIn Profile*
-- GitHub: *Add your GitHub Profile*
+### 📬 Contact
+📧 Email: ayansamanta875@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/ayan-samanta-710813246
+
+🧑‍💻 GitHub: https://github.com/Ayan875an
+
 
 ---
 
