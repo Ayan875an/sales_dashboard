@@ -24,11 +24,25 @@ The goal of this project is to:
 
 Provides a high-level summary of business performance including:
 
-* Total Sales
-* Sales Target Achievement %
-* Regional Performance Overview
-* Key Business KPIs
-* Performance Trends
+## Key KPIs
+Total Sales: 2.94M
+Total Orders: 5K
+Total Profit: 372.83K
+Return Rate: 6.37%
+Delay Rate: 40.76%
+Profit Margin: 12.69%
+
+## Visualizations
+Sales & Profit by Year
+Sales Distribution by Region
+Year-over-Year Growth Analysis
+Business KPI Summary Cards
+
+## Key Insights
+Sales increased consistently from 2015 to 2018.
+Central region contributed the highest sales.
+Total orders grew significantly over the analysis period.
+Profitability improved alongside sales growth.
 
 ### 2. Regional Manager Performance
 <img width="986" height="551" alt="image" src="https://github.com/user-attachments/assets/59aa3764-36e3-4d62-b7ea-f134aa8cf026" />
